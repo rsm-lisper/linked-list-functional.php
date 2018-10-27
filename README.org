@@ -1,5 +1,5 @@
-#+TITLE: linked-list-functional.php
+#+TITLE: plis - PhpLISt
 
-Listy jednokierunkowe (linked list) funkcjonalnie dla PHP.
+Lista jednokierunkowa (linked list) funkcjonalnie dla PHP.
 
 /(prace w toku)/
