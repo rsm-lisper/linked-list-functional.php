@@ -12,9 +12,7 @@ namespace llf;
  */
 function cons ($first, $next) {
     return function ($pos) {
-        if ($pos === 0) {
-            return $first;
-        }
+        if ($pos === 0) { return $first; }
         return $next;
     };
 }
@@ -27,7 +25,7 @@ function cons ($first, $next) {
  * @return mixed
  */
 function first ($cons) {
-    return $cons(0);
+    return $cons (0);
 }
 
 
@@ -38,5 +36,5 @@ function first ($cons) {
  * @return mixed
  */
 function next ($cons) {
-    return $cons(1);
+    return $cons (1);
 }
