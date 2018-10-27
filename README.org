@@ -1,0 +1,5 @@
+#+TITLE: linked-list-functional.php
+
+Listy jednokierunkowe (linked list) funkcjonalnie dla PHP.
+
+/(prace w toku)/
