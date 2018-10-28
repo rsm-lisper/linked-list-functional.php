@@ -10,12 +10,10 @@ namespace plis;
  * @param mixed $next Zawartość drugiego pola.
  * @return callable
  */
-function cons ($first, $next) {
-    return function ($pos) {
-        if ($pos === 0) { return $first; }
-        return $next;
-    };
-}
+function cons ($first, $next) { return
+        function ($return_first) { return
+            $return_first ? $first :
+            $next ;};}
 
 
 /**
@@ -24,9 +22,8 @@ function cons ($first, $next) {
  * @param callable $cons Komórka stworzona przez cons().
  * @return mixed
  */
-function first ($cons) {
-    return $cons (0);
-}
+function first ($cons) { return
+        $cons (true) ;}
 
 
 /**
@@ -35,6 +32,5 @@ function first ($cons) {
  * @param callable $cons Komórka stworzona przez cons().
  * @return mixed
  */
-function next ($cons) {
-    return $cons (1);
-}
+function next ($cons) { return
+        $cons (false) ;}
